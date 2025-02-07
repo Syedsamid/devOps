@@ -69,6 +69,8 @@ Q 2. React Vite + Backend Setup
 1. make sure hello world in react in working and everything is working properly
 tailwind css optional or bootstrap.. add it
 
+install vite - npm create vite@latest and make two folders client and server
+
 2. cd client
 3. npm run build
 4. this will generate a dist folder

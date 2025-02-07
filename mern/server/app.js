@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename); //new line
 const app = express();
 const PORT = 5007;
 
+
 app.use(express.static(path.join(__dirname, "dist"))); //new line
 
 app.get("/samid", (req, res) => {
