@@ -125,7 +125,7 @@ Select per/month
 Example $16/mo
 - Choose Authentication Method 
 select password and create root password
-Example : meraj2006Fatima
+Example : s@naya20sAm
 
 Select Check Mark : Add improved metrics monitoring and alerting (free)
 
@@ -152,39 +152,40 @@ sudo apt update && sudo apt upgrade
 
 - change suhail to your username as: suhail,omer,sneha
 
-sudo adduser suhail
-sudo chown suhail:suhail /home/suhail 
-nano /etc/sudoers
-Then add the user below admin user like below syntax.
-suhail ALL=(ALL)  ALL
-usermod -a -G sudo suhail
-su suhail
-cd
+sudo adduser samid
+sudo chown samid:samid/home/samid
+su root
+nano/etc/sudoers
+Then add the user below admin user like below syntax. 
+samid ALL = (ALL) ALL
+sudo chown samid:samid/home/samid
+usermod -a -G sudo samid
+su samid
+cd enter
 
-11. SSH Key Setup
+
+Q11. SSH Key Setup 
 cd
-ssh-keygen -t ed25519 -C "suhailroushan13@gmail.com"
-Enter 4 Times 
+ssh-keygen -t ed25519 -C "samidsyed1720@gmail.com"
+Enter 4 Times
 cd .ssh
 cat id_ed25519.pub
-copy the whole content of public and paste in
-GitHub ==> Settings ==> SSH & GPG Keys ==> New SSH Keys 
+copy the whole content of public and paste in 
+Github ==> Settings ==> SSH & GPG Keys ==> Add SSH Keys
 
-Paste the key in Key Section and Save it 
-//In Terminal
-
-cd
-git config --global user.name "merajfatima"
-git config --global user.email "fatimahmeraj22@gmail.com"
-
-
-//To Verify : git config --list 
-
-// Clone Any Repo from your Profilr
+Past the key in Key Section and Save it
+// In Terminal
 
 cd
-git clone ssh-url
-Enter : yes 
+git config --global user.name "Syedsamid"
+git config --global user.email "samidsyed1720@gmail.com"
+
+// To verigyy : git config --list
+// Clone Any Repo From your Profile
+
+cd
+fit clone ssh-url git@github.com:Syedsamid/Portfolio.git
+Enter : yes
 
 
 
@@ -196,15 +197,15 @@ Enter : yes
 - Copy the content of public key 
 
 
-// Windows
-- C:\Users\suhai\.ssh
-- If no .ssh
-- open cmd 
-- ssh-keygen -t ed25519 -C "suhailroushan13@gmail.com"
-- Enter 4 Times
-- cd .ssh
-- type id_ed25519.pub
-- Copy Public key and paste in authorized_keys of cloud
+//Window
+ - C:\Users\samid\.shh
+If no.ssh
+open cmd
+ssh-keygen -t ed25519 -C "samidsyed1720@gmail.com"
+Enter 4 times
+cd .ssh
+type id_ed25519.pub
+Copy Public key and paste in authorized_keys of cloud
 
 // Cloud 
 
@@ -219,7 +220,7 @@ Enter : yes
 - Settings ==> Scroll Down ==> Add a new Profile 
 - Select Ubuntu and Click on Duplicate
 - Give Name as Cloud Sever 
-- ssh meraj@157.245.100.213
+-ssh samid@159.89.172.181
 
 - Change the setting and click on save
 - Open Terminal dropdown and select Cloud Server
@@ -227,7 +228,12 @@ Enter : yes
 - You will cloud server 
 
 
-13. Default Packages 
+13. Default Packages
+  create a script
+  touch ok.sh
+  nano ok.sh
+
+past this code in ok.sh
 sudo apt install -y git
 sudo apt install -y net-tools
 sudo timedatectl set-timezone Asia/Kolkata
@@ -276,7 +282,7 @@ For Nodemon : npm i -g nodemon
 -----------------
 Add 2 A Records of your domains
 www and @ ==> Cloud IP
------------------
+----------------- 
 
 4) get your NS Records
 5) Take your cloud NS and Add it in Domain DNS Settings
