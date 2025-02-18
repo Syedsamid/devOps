@@ -21,7 +21,7 @@ app.get("/samid", (req, res) => {
 
 //new line
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "indexedDB.html"));
+  res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
 app.listen(PORT, () => {
